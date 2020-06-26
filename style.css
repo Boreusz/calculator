@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(25, 17, 61);
+}
+#home{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#calc-body{
+    background-color: #393e46;
+    width: 450px;
+    height: 500px;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.calc-display{
+    background-color: rgb(201, 201, 201);
+    width: 400px;
+    height: 100px;
+
+    border-radius: 8px;
+
+    margin: 20px 0 20px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+#top{
+
+}
+#bottom{
+
+}
+
+.buttons{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, minmax(10px, 1fr));
+    grid-template-rows: repeat(4, minmax(30px, 1fr));
+    grid-template-areas: 
+        "num7 num8 num9 opDi del"
+        "num4 num5 num6 opMu opSq"
+        "num1 num2 num3 opMi opEq"
+        "opDot num0 opPlMi opPl opEq"
+    ;
+}
+.number#num0 { grid-area: num0; }
+.number#num1 { grid-area: num1; }
+.number#num2 { grid-area: num2; }
+.number#num3 { grid-area: num3; }
+.number#num4 { grid-area: num4; }
+.number#num5 { grid-area: num5; }
+.number#num6 { grid-area: num6; }
+.number#num7 { grid-area: num7; }
+.number#num8 { grid-area: num8; }
+.number#num9 { grid-area: num9; }
+.operator#del { grid-area: del; }
+.operator#div { grid-area: opDi; }
+.operator#mult { grid-area: opMu; }
+.operator#minus { grid-area: opMi; }
+.operator#plus { grid-area: opPl; }
+.operator#Dot { grid-area: opDot; }
+.operator#plusMinus { grid-area: opPlMi; }
+.operator#root { grid-area: opSq; }
+.operator#equal { grid-area: opEq;}
+
+button{
+    
+}
+.button{
+    background-color: ;
+}
+.operator{
+
+}
