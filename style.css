@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(25, 17, 61);
+    background-color: #b8ffe0
 }
 #home{
     width: 100vw;
@@ -11,24 +11,28 @@ body{
     align-items: center;
 }
 #calc-body{
-    background-color: #393e46;
-    width: 450px;
+    background-color: #b8d7ff;
+    width: 350px;
     height: 500px;
 
     border-radius: 8px;
+
+    box-shadow: 5px 5px 40px;
 
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 .calc-display{
-    background-color: rgb(201, 201, 201);
-    width: 400px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
     height: 100px;
 
     border-radius: 8px;
+    border: 1px whitesmoke;
+    border-style: ridge;
 
-    margin: 20px 0 20px 25px;
+    margin: 30px 25px 10px;
 
     display: flex;
     flex-direction: column;
@@ -37,35 +41,55 @@ body{
 }
 
 #top{
+    width: 270px;
+    height: 50px;
 
+    margin: auto;
+
+    border-bottom: 1px solid #393e464f;
+
+    padding-top: 10px;
+
+    font-size: 14px;
 }
 #bottom{
+    width: 270px;
+    height: 50px;
 
+    padding-top: 10px;
+
+    margin: auto;
+
+    font-size: 30px;
 }
 
 .buttons{
+    width: 300px;
+    height: 310px;
+    margin: auto;
+
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(5, minmax(10px, 1fr));
-    grid-template-rows: repeat(4, minmax(30px, 1fr));
-    grid-template-areas: 
+    gap: 10px;
+    grid-template-columns: repeat(5, minmax(10px, 80px));
+    grid-template-rows: repeat(4, minmax(30px, 80px));
+    grid-template-areas:
         "num7 num8 num9 opDi del"
         "num4 num5 num6 opMu opSq"
         "num1 num2 num3 opMi opEq"
-        "opDot num0 opPlMi opPl opEq"
+        "opDot num0  opPlMi opPl opEq"
     ;
 }
-.number#num0 { grid-area: num0; }
-.number#num1 { grid-area: num1; }
-.number#num2 { grid-area: num2; }
-.number#num3 { grid-area: num3; }
-.number#num4 { grid-area: num4; }
-.number#num5 { grid-area: num5; }
-.number#num6 { grid-area: num6; }
-.number#num7 { grid-area: num7; }
-.number#num8 { grid-area: num8; }
-.number#num9 { grid-area: num9; }
-.operator#del { grid-area: del; }
+.button#num0 { grid-area: num0; }
+.button#num1 { grid-area: num1; }
+.button#num2 { grid-area: num2; }
+.button#num3 { grid-area: num3; }
+.button#num4 { grid-area: num4; }
+.button#num5 { grid-area: num5; }
+.button#num6 { grid-area: num6; }
+.button#num7 { grid-area: num7; }
+.button#num8 { grid-area: num8; }
+.button#num9 { grid-area: num9; }
+.operator#del { grid-area: del; background-color: rgb(170, 170, 170); color: white;}
 .operator#div { grid-area: opDi; }
 .operator#mult { grid-area: opMu; }
 .operator#minus { grid-area: opMi; }
@@ -73,14 +97,23 @@ body{
 .operator#Dot { grid-area: opDot; }
 .operator#plusMinus { grid-area: opPlMi; }
 .operator#root { grid-area: opSq; }
-.operator#equal { grid-area: opEq;}
+.operator#equal { grid-area: opEq; color:}
 
 button{
-    
+
+    border-radius: 5px;
+    border-style: none;
+
+    background-color: rgb(66, 66, 62);
+    color: white;
+
+    font-weight: bold;
+    font-size: 24px;
 }
 .button{
-    background-color: ;
+
 }
 .operator{
+    background-color: #ff7a7a;
 
 }
