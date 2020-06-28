@@ -27,6 +27,7 @@ body{
     background-color: rgb(255, 255, 255);
     width: 300px;
     height: 100px;
+    color: rgb(86, 100, 116);
 
     border-radius: 8px;
     border: 1px whitesmoke;
@@ -60,7 +61,8 @@ body{
 
     margin: auto;
 
-    font-size: 30px;
+    font-size: 26px;
+    font-weight: 600;
 }
 
 .buttons{
@@ -89,15 +91,15 @@ body{
 .button#num7 { grid-area: num7; }
 .button#num8 { grid-area: num8; }
 .button#num9 { grid-area: num9; }
-.operator#del { grid-area: del; background-color: rgb(170, 170, 170); color: white;}
 .operator#div { grid-area: opDi; }
 .operator#mult { grid-area: opMu; }
 .operator#minus { grid-area: opMi; }
 .operator#plus { grid-area: opPl; }
-.operator#Dot { grid-area: opDot; }
-.operator#plusMinus { grid-area: opPlMi; }
-.operator#root { grid-area: opSq; }
-.operator#equal { grid-area: opEq; color:}
+.op#delete { grid-area: del; background-color: rgb(170, 170, 170);}
+.op#Dot { grid-area: opDot; }
+.op#plusMinus { grid-area: opPlMi; }
+.op#clear { grid-area: opSq; background-color: rgb(170, 170, 170);}
+.op#equal { grid-area: opEq;}
 
 button{
 
@@ -113,7 +115,7 @@ button{
 .button{
 
 }
-.operator{
+.operator, .op{
     background-color: #ff7a7a;
 
 }
