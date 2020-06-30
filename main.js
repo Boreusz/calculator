@@ -88,6 +88,8 @@ equalButton.addEventListener('click', solution)
 // Essential functions to make calculator usable
 
 function clear(){
+    topDisplay.textContent = '';
+    bottomDisplay.textContent = '';
     isDotAvailable = true;
     previousValue = '';
     currentValue = '';
